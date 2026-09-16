@@ -1,0 +1,34 @@
+# QB Exports - Sensitive data, large files
+qb_exports/*.xlsx
+!qb_exports/.gitkeep
+
+# Generated Reports
+reports_output/*.pdf
+reports_output/*.xlsx
+!reports_output/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.env
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.tmp
+~$*
+.temp/
