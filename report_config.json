@@ -1,0 +1,66 @@
+{
+  "branding": {
+    "company_name": "Noorda College of Osteopathic Medicine, LLC",
+    "letterhead_template": "Letterhead.docx",
+    "logo_position": "top-center",
+    "logo_size": 80,
+    "footer_text": "Confidential - For Budget Manager Use Only",
+    "report_period": "July 1, 2026 - July 5, 2027"
+  },
+
+  "reports": [
+    {
+      "name": "Report to CFO",
+      "type": "top-level",
+      "include_payroll": true,
+      "departments": [
+        "2.1 - FINANCE",
+        "2.3 - FACILITIES",
+        "2.5 - SECURITY",
+        "2.2 - HUMAN RESOURCES"
+      ],
+      "include_summary_page": true,
+      "include_detail": true,
+      "include_excel": true,
+      "description": "Consolidated CFO report with all departments and payroll"
+    },
+    {
+      "name": "Finance Manager",
+      "type": "budget-manager",
+      "include_payroll": false,
+      "departments": [
+        "2.1 - FINANCE"
+      ],
+      "include_summary_page": true,
+      "include_detail": true,
+      "include_excel": true,
+      "description": "Budget vs Actual for Finance Department"
+    }
+  ],
+
+  "accrual_settings": {
+    "condense_accruals": true,
+    "ramp_keywords": [
+      "Ramp",
+      "accrual",
+      "pending",
+      "re-accrue"
+    ],
+    "min_days_between_offset": 1
+  },
+
+  "file_paths": {
+    "budget_vs_actuals": "qb_exports/Budget_vs_Actuals.xlsx",
+    "general_ledger": "qb_exports/General_Ledger.xlsx",
+    "output_folder": "reports_output",
+    "config_folder": "configs"
+  },
+
+  "report_settings": {
+    "gross_profit_row": 43,
+    "include_variance_analysis": true,
+    "variance_threshold_percent": 10,
+    "currency_format": "USD",
+    "date_format": "%m/%d/%Y"
+  }
+}
